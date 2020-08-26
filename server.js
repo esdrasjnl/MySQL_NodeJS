@@ -12,23 +12,12 @@ app.use(bodyparser.urlencoded({ extended: true }));
 
 //Conexión a MySQL
 
-//mysql://user:password@host/database
-//mysql://b44183ecded7e9:0a28e521@us-cdbr-east-02.cleardb.com/heroku_0fcccf88fcc066e
-const connection = mysql.createConnection({
-    host: 'us-cdbr-east-02.cleardb.com',
-    user: 'b44183ecded7e9',
-    password: '0a28e521',
-    database: 'heroku_0fcccf88fcc066e'
-});
-
-/*
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '110896',
     database: 'bdgricel'
 });
-*/
 
 //Check connect
 connection.connect(error=>{
